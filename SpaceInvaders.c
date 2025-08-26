@@ -312,18 +312,18 @@ void Game_Init(void){
   // Version 1: add enemy initialization with close posture.
 	 for(int i=0;i<(current_level + 1);i++){
 		 if(i <= 3){
-			Enemy[i].x = 15*i;//creates top portion of enemies 0-> 1-> 2
+			Enemy[i].x = 15*i;
 			Enemy[i].y = 10;
 			if(i == 3 || i > 3 && i <= 5){
-				Enemy[i].image = SmallEnemyPointA[i - 3];//starts at zero
+				Enemy[i].image = SmallEnemyPointA[i - 3];
 			}
 		}
 		else if(i > 3 && i <= 5){
-			Enemy[i].x = 15*(i - 4) - 10;//creates top portion of enemies 0-> 1-> 2
+			Enemy[i].x = 15*(i - 4) - 10;
 			Enemy[i].y = 20;
 		}
 		else{
-			Enemy[i].x = 15*(i - 4) - 10;//creates top portion of enemies 0-> 1-> 2
+			Enemy[i].x = 15*(i - 4) - 10;
 			Enemy[i].y = 20;
 			Enemy[i].image = SmallEnemyPointA[i - 6];
 		}
@@ -521,3 +521,4 @@ void Delay100ms(uint32_t count){
     count--;
   }
 }
+
